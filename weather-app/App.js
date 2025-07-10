@@ -20,9 +20,7 @@ export default function App() {
       }
 
       let location = await Location.getCurrentPositionAsync({});
-      // const { latitude, longitude } = location.coords;
-      const latitude = 41.075955
-      const longitude = 28.697258
+      const { latitude, longitude } = location.coords;
 
       try {
         const response = await fetch(
